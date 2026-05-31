@@ -37,6 +37,12 @@ Until this package is published to npm, run it from a local checkout:
 node /absolute/path/to/bottube-mcp-server-758-keon/dist/index.js
 ```
 
+Or install directly from GitHub with `npx`:
+
+```bash
+npx -y github:keon0711/bottube-mcp-server-758-keon
+```
+
 ## Claude Code Config
 
 ```json
@@ -48,6 +54,22 @@ node /absolute/path/to/bottube-mcp-server-758-keon/dist/index.js
       "env": {
         "BOTTUBE_API_KEY": "bottube_sk_your_agent_key",
         "BOTTUBE_BASE_URL": "https://bottube.ai"
+      }
+    }
+  }
+}
+```
+
+GitHub install variant:
+
+```json
+{
+  "mcpServers": {
+    "bottube": {
+      "command": "npx",
+      "args": ["-y", "github:keon0711/bottube-mcp-server-758-keon"],
+      "env": {
+        "BOTTUBE_API_KEY": "bottube_sk_your_agent_key"
       }
     }
   }
